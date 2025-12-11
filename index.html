@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電商操盤手作品集 | ROAS 專家</title>
+    <!-- 載入 Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 設定字體：使用 Noto Sans TC 作為中文字體優先，確保專業與清晰度 -->
+    <style>
+        /* 使用 Inter 或 Noto Sans TC 確保專業與清晰度 */
+        body {
+            font-family: 'Inter', 'Noto Sans TC', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+        /* 定義專業的配色方案 */
+        .bg-primary { background-color: #1a202c; } /* 深藍灰 */
+        .text-accent { color: #38bdf8; } /* 亮藍色 */
+    </style>
+</head>
+<body class="bg-primary text-gray-100 antialiased">
+
+    <!-- 導航列 -->
+    <header class="sticky top-0 z-50 bg-primary/95 backdrop-blur-sm shadow-lg border-b border-gray-700">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-accent">Dylan.ECOM</a>
+            <div class="space-x-4 md:space-x-8 text-sm md:text-base hidden sm:flex">
+                <a href="#cases" class="hover:text-accent transition duration-200">精選案例</a>
+                <a href="#services" class="hover:text-accent transition duration-200">服務項目</a>
+                <a href="#contact" class="hover:text-accent transition duration-200">聯絡諮詢</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12">
+
+        <!-- 1. 首頁 (Home) / Hero Section -->
+        <section id="home" class="py-20 md:py-32 text-center">
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold mb-6 leading-tight">
+                專注於 <span class="text-accent">ROAS 翻倍</span> 的電商操盤手
+            </h1>
+            <p class="text-xl sm:text-2xl text-gray-400 mb-10 max-w-4xl mx-auto">
+                以數據驅動策略，提供全站代操、Meta/Google 廣告投放與高成效會員經營策略。
+            </p>
+            <a href="#contact" class="inline-block bg-accent text-primary font-bold py-3 px-8 rounded-lg shadow-xl hover:bg-sky-500 transition duration-300 transform hover:scale-105">
+                預約免費帳戶健檢
+            </a>
+        </section>
+
+        <!-- 1.B. 數據亮點 (Social Proof) -->
+        <section class="py-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center bg-gray-800/50 p-8 rounded-xl shadow-2xl mb-20">
+            <div class="border-r border-gray-700 last:border-r-0">
+                <p class="text-5xl font-extrabold text-accent">4.5+</p>
+                <p class="text-gray-400 mt-2">平均廣告投資報酬率 (ROAS)</p>
+            </div>
+            <div class="border-r border-gray-700 last:border-r-0">
+                <p class="text-5xl font-extrabold text-accent">10+</p>
+                <p class="text-gray-400 mt-2">經手不同產業電商品牌</p>
+            </div>
+            <div>
+                <p class="text-5xl font-extrabold text-accent">300%</p>
+                <p class="text-gray-400 mt-2">單月最高營收成長</p>
+            </div>
+        </section>
+
+        <!-- 1.C. 精選案例 (Featured Cases) -->
+        <section id="cases" class="py-16">
+            <h2 class="text-4xl font-bold text-center mb-12">精選成功案例</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 案例卡片 1: 知名居家品牌 (詳細內容在下方 Section 2 展示) -->
+                <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-accent/50 transition duration-300">
+                    <img src="https://placehold.co/600x300/1e293b/a5b4fc?text=居家品牌+LOGO" alt="居家品牌 Logo 圖片" class="rounded-lg mb-4 w-full h-auto object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x300/1e293b/a5b4fc?text=居家品牌+LOGO';" />
+                    <h3 class="text-xl font-semibold mb-2 text-accent">知名居家品牌：數據驅動轉型</h3>
+                    <p class="text-gray-400 mb-4">透過精準受眾重整與高門檻活動策略，扭轉淡季低迷營收。</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-600 text-xs font-medium px-2.5 py-0.5 rounded-full">ROAS 5.5</span>
+                        <span class="bg-green-600 text-xs font-medium px-2.5 py-0.5 rounded-full">營收 YoY +150%</span>
+                        <span class="bg-purple-600 text-xs font-medium px-2.5 py-0.5 rounded-full">全站代操</span>
+                    </div>
+                    <a href="#case-detail" class="mt-4 block text-center text-sm font-medium text-accent hover:underline">查看完整復盤 >></a>
+                </div>
+
+                <!-- 案例卡片 2: 保健食品電商 -->
+                <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-accent/50 transition duration-300">
+                    <img src="https://placehold.co/600x300/1e293b/a5b4fc?text=保健食品+LOGO" alt="保健食品 Logo 圖片" class="rounded-lg mb-4 w-full h-auto object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x300/1e293b/a5b4fc?text=保健食品+LOGO';" />
+                    <h3 class="text-xl font-semibold mb-2 text-accent">保健食品：高客單價策略</h3>
+                    <p class="text-gray-400 mb-4">鎖定高忠誠度受眾，利用訂閱制與組合包策略，成功拉高 AOV。</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-600 text-xs font-medium px-2.5 py-0.5 rounded-full">AOV +35%</span>
+                        <span class="bg-green-600 text-xs font-medium px-2.5 py-0.5 rounded-full">LAL 擴圈</span>
+                    </div>
+                    <a href="#case-detail-2" class="mt-4 block text-center text-sm font-medium text-accent hover:underline">查看完整復盤 >></a>
+                </div>
+
+                <!-- 案例卡片 3: 新創服飾品牌 -->
+                <div class="bg-gray-800 rounded-xl p-6 shadow-lg hover:shadow-accent/50 transition duration-300">
+                    <img src="https://placehold.co/600x300/1e293b/a5b4fc?text=服飾品牌+LOGO" alt="服飾品牌 Logo 圖片" class="rounded-lg mb-4 w-full h-auto object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x300/1e293b/a5b4fc?text=服飾品牌+LOGO';" />
+                    <h3 class="text-xl font-semibold mb-2 text-accent">新創服飾：品牌曝光與導流</h3>
+                    <p class="text-gray-400 mb-4">在 TikTok 進行短影音爆發式投放，快速累積品牌知名度與網站流量。</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-600 text-xs font-medium px-2.5 py-0.5 rounded-full">CPA 下降 40%</span>
+                        <span class="bg-green-600 text-xs font-medium px-2.5 py-0.5 rounded-full">TikTok 投放</span>
+                    </div>
+                    <a href="#case-detail-3" class="mt-4 block text-center text-sm font-medium text-accent hover:underline">查看完整復盤 >></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. 案例詳情頁 (Case Study Page) - 詳細展示第一個案例 -->
+        <section id="case-detail" class="py-20">
+            <div class="bg-gray-900 rounded-xl p-6 sm:p-10 shadow-2xl border-2 border-accent/20">
+                <h2 class="text-4xl font-extrabold mb-8 text-center text-accent">案例復盤：知名居家品牌</h2>
+                
+                <!-- A. 專案看板 (Project Header) -->
+                <div class="mb-10 text-center">
+                    <p class="text-lg text-gray-400">專案時間：2023 Q1 - Q3</p>
+                    <p class="text-lg text-gray-400 mb-4">角色：全案廣告投手與活動企劃</p>
+                    <div class="inline-block bg-green-700/50 p-4 rounded-lg">
+                        <p class="text-2xl font-bold">核心成果：營收 YoY +150% | ROAS 穩定 5.5+</p>
+                    </div>
+                </div>
+
+                <!-- B. 挑戰與背景 (The Challenge) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10 items-start">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4 border-l-4 border-red-500 pl-3">挑戰：利潤被廣告費吞噬</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-300">
+                            <li>舊有廣告受眾過度開發，流量觸頂，導致 CPA 居高不下 ($600+)</li>
+                            <li>產品線廣，但活動檔期缺乏主題性，無法有效連動高客單品項。</li>
+                            <li>素材單一化，僅使用產品圖，點擊率 (CTR) 低於 1.2%。</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <!-- Image of the challenge: low traffic/high cost chart -->
+                        <img src="https://placehold.co/600x300/4a5568/edf2f7?text=Before:+高CPA+低ROAS+示意圖" alt="接手前數據示意圖" class="rounded-lg shadow-lg" onerror="this.onerror=null; this.src='https://placehold.co/600x300/4a5568/edf2f7?text=Before:+高CPA+低ROAS+示意圖';">
+                    </div>
+                </div>
+
+                <!-- C. 執行策略 (The Solution) - 展現專業度 -->
+                <h3 class="text-2xl font-semibold mb-6 border-l-4 border-accent pl-3">執行策略 (The Solution)</h3>
+                <ol class="space-y-6 text-gray-300">
+                    <li class="p-4 bg-gray-800 rounded-lg">
+                        <span class="font-bold text-accent">1. 受眾重整與擴圈：</span>
+                        <p>重新劃分行銷漏斗：將再行銷預算移撥至高價值 LAL (類似受眾)，並利用價值型規則 (Value-based lookalikes) 擴大新客獲取，目標 CPA 降低 25%。</p>
+                    </li>
+                    <li class="p-4 bg-gray-800 rounded-lg">
+                        <span class="font-bold text-accent">2. 素材 A/B Test 戰場化：</span>
+                        <p>從產品圖轉換為「情境式短影音」，強調產品解決使用者痛點（居家收納、節省空間）。CTR 成功提升至 2.5%，帶動轉換。
+                            <img src="https://placehold.co/600x150/2d3748/f7fafc?text=高成效素材+範例截圖" alt="高成效素材範例截圖" class="mt-3 rounded w-full" onerror="this.onerror=null; this.src='https://placehold.co/600x150/2d3748/f7fafc?text=高成效素材+範例截圖';">
+                        </p>
+                    </li>
+                    <li class="p-4 bg-gray-800 rounded-lg">
+                        <span class="font-bold text-accent">3. 活動門檻優化 (拉高 AOV)：</span>
+                        <p>結合高毛利商品設計「滿 $3,000 贈限定收納包」活動。客單價 (AOV) 成功從 $1,800 提升至 $2,430。</p>
+                    </li>
+                </ol>
+
+                <!-- D. 最終成效 (The Result) -->
+                <div class="mt-12">
+                    <h3 class="text-2xl font-semibold mb-4 border-l-4 border-green-500 pl-3">最終成效：數據化成長</h3>
+                    <div class="bg-gray-800 p-6 rounded-lg">
+                        <p class="text-xl text-green-400 font-bold mb-4">關鍵指標總結 (Q1 vs Q3)</p>
+                        <ul class="grid grid-cols-2 gap-4">
+                            <li><span class="font-bold">營收成長 (GMV)：</span> <span class="text-green-400">+150%</span></li>
+                            <li><span class="font-bold">平均 ROAS：</span> <span class="text-green-400">2.0 → 5.5</span></li>
+                            <li><span class="font-bold">獲客成本 (CPA)：</span> <span class="text-red-400">下降 30%</span></li>
+                            <li><span class="font-bold">客單價 (AOV)：</span> <span class="text-green-400">提升 35%</span></li>
+                        </ul>
+                    </div>
+                    <!-- 圖表呈現：模擬數據成長趨勢圖 -->
+                    <img src="https://placehold.co/800x400/2d3748/f7fafc?text=數據成長趨勢圖:+ROAS+與+GMV+對比+Q1-Q3" alt="數據成長趨勢圖" class="mt-6 rounded-lg shadow-xl w-full" onerror="this.onerror=null; this.src='https://placehold.co/800x400/2d3748/f7fafc?text=數據成長趨勢圖:+ROAS+與+GMV+對比+Q1-Q3';">
+                </div>
+
+                <!-- 客戶證言 -->
+                <div class="mt-12 p-6 bg-yellow-700/30 rounded-lg border-l-4 border-yellow-500">
+                    <p class="italic text-yellow-300">「我們終於看到廣告預算花在刀口上，CPA 下降後，利潤空間大增。是我們合作過最懂數據的操盤手。」</p>
+                    <p class="text-right mt-2 text-sm font-semibold text-yellow-200">— 居家品牌 CEO</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. 服務與關於 (About & Services) -->
+        <section id="services" class="py-20">
+            <h2 class="text-4xl font-bold text-center mb-12">服務項目與技術堆疊</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- A. 服務項目 -->
+                <div class="bg-gray-800 p-8 rounded-xl shadow-xl">
+                    <h3 class="text-2xl font-semibold mb-4 text-accent">我的服務範圍 (What I Do)</h3>
+                    <div class="space-y-3 text-gray-300">
+                        <p class="flex items-center"><span class="text-green-500 font-bold mr-2 text-xl">✅</span> Meta (Facebook/IG) 精準廣告投放</p>
+                        <p class="flex items-center"><span class="text-green-500 font-bold mr-2 text-xl">✅</span> Google Ads (搜尋、多媒體、P-Max) 操盤</p>
+                        <p class="flex items-center"><span class="text-green-500 font-bold mr-2 text-xl">✅</span> 電商活動檔期全案企劃與執行</p>
+                        <p class="flex items-center"><span class="text-green-500 font-bold mr-2 text-xl">✅</span> GA4 數據追蹤與成效分析</p>
+                        <p class="flex items-center"><span class="text-green-500 font-bold mr-2 text-xl">✅</span> 網站轉換率優化 (CRO) 建議</p>
+                    </div>
+
+                    <h3 class="text-2xl font-semibold mt-8 mb-4 text-red-400">非服務範圍 (What I Don't Do)</h3>
+                    <div class="space-y-3 text-gray-300">
+                        <p class="flex items-center"><span class="text-red-500 font-bold mr-2 text-xl">❌</span> 粉絲專頁日常貼文與客服回覆</p>
+                        <p class="flex items-center"><span class="text-red-500 font-bold mr-2 text-xl">❌</span> 商品打包與物流出貨作業</p>
+                    </div>
+                </div>
+
+                <!-- B. 工具箱 (Tech Stack) -->
+                <div class="bg-gray-800 p-8 rounded-xl shadow-xl">
+                    <h3 class="text-2xl font-semibold mb-6 text-accent">技術與平台工具箱</h3>
+                    <div class="flex flex-wrap gap-4 text-sm">
+                        <span class="bg-gray-700 text-gray-200 px-4 py-2 rounded-full shadow-md">Shopify</span>
+                        <span class="bg-gray-700 text-gray-200 px-4 py-2 rounded-full shadow-md">SHOPLINE</span>
+                        <span class="bg-gray-700 text-gray-200 px-4 py-2 rounded-full shadow-md">Cyberbiz</span>
+                        <span class="bg-gray-700 text-gray-200 px-4 py-2 rounded-full shadow-md">GA4 & GTM</span>
+                        <span class="bg-gray-700 text-gray-200 px-4 py-2 rounded-full shadow-md">Looker Studio (報表視覺化)</span>
+                        <span class="bg-gray-700 text-gray-200 px-4 py-2 rounded-full shadow-md">Klaviyo (Email/SMS 行銷)</span>
+                        <span class="bg-gray-700 text-gray-200 px-4 py-2 rounded-full shadow-md">Hotjar (行為分析)</span>
+                    </div>
+                    <p class="mt-6 text-gray-400">具備多平台操作經驗，能根據您的技術環境快速導入追蹤與優化策略。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 聯絡/諮詢 (Contact) -->
+        <section id="contact" class="py-20">
+            <div class="max-w-3xl mx-auto bg-gray-900 p-8 rounded-xl shadow-2xl border-t-4 border-accent">
+                <h2 class="text-3xl font-bold text-center mb-4 text-accent">開始您的營收成長計畫</h2>
+                <p class="text-center text-gray-400 mb-8">請填寫以下表單，我將在 48 小時內回覆並提供 <span class="font-bold text-white">免費 30 分鐘帳戶健檢</span>。</p>
+                
+                <form onsubmit="handleSubmit(event)" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-300 mb-1">您的姓名/公司名稱 <span class="text-red-500">*</span></label>
+                        <input type="text" id="name" name="name" required class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-accent focus:border-accent text-white">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-300 mb-1">電子郵件 <span class="text-red-500">*</span></label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-accent focus:border-accent text-white">
+                    </div>
+                    <div>
+                        <label for="website" class="block text-sm font-medium text-gray-300 mb-1">您的電商網址 <span class="text-red-500">*</span></label>
+                        <input type="url" id="website" name="website" required class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-accent focus:border-accent text-white">
+                    </div>
+                    <div>
+                        <label for="budget" class="block text-sm font-medium text-gray-300 mb-1">每月預算範圍 (廣告/代操費) <span class="text-red-500">*</span></label>
+                        <select id="budget" name="budget" required class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-accent focus:border-accent text-white">
+                            <option value="">請選擇</option>
+                            <option value="under50">5萬以下</option>
+                            <option value="50-150">5萬 - 15萬</option>
+                            <option value="150-300">15萬 - 30萬</option>
+                            <option value="over300">30萬以上</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="problem" class="block text-sm font-medium text-gray-300 mb-1">目前遭遇的核心問題 <span class="text-red-500">*</span></label>
+                        <textarea id="problem" name="problem" rows="4" required class="w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg focus:ring-accent focus:border-accent text-white"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-accent text-primary font-bold py-3 rounded-lg hover:bg-sky-500 transition duration-300 transform hover:scale-[1.01]">
+                        送出諮詢 (預約免費健檢)
+                    </button>
+                    <p id="message" class="text-center mt-4 text-sm text-green-400 hidden">感謝您的諮詢，我會盡快與您聯繫！</p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 頁尾 -->
+    <footer class="mt-20 py-8 border-t border-gray-800 text-center text-gray-500">
+        <p>&copy; 2024 Dylan.ECOM. All Rights Reserved. | 數據驅動您的電商未來。</p>
+    </footer>
+
+    <!-- JavaScript 處理表單提交 (使用模擬行為取代實際後端提交) -->
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            const messageElement = document.getElementById('message');
+            const form = event.target;
+            
+            // 模擬表單提交和成功訊息
+            form.reset();
+            messageElement.classList.remove('hidden');
+            
+            // 3秒後隱藏訊息
+            setTimeout(() => {
+                messageElement.classList.add('hidden');
+            }, 3000);
+
+            // 在 console 輸出收集到的數據（真實應用需替換為 API 提交）
+            console.log('--- 聯繫表單已提交 (模擬) ---');
+            console.log('姓名:', document.getElementById('name').value);
+            console.log('Email:', document.getElementById('email').value);
+            console.log('網址:', document.getElementById('website').value);
+            console.log('預算:', document.getElementById('budget').value);
+            console.log('問題:', document.getElementById('problem').value);
+            console.log('------------------------------');
+        }
+    </script>
+</body>
+</html>
