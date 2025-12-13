@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>電商營運總監作品集 | 自動化營運 x ROAS 增長專家</title>
+    <title>電商營運總監作品集 | 自動化營運 x 利潤增長</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -14,10 +14,10 @@
                         sans: ['Inter', 'Noto Sans TC', 'sans-serif'],
                     },
                     colors: {
-                        primary: '#0f172a', // 深藍底色
-                        secondary: '#1e293b', // 卡片底色
-                        accent: '#38bdf8', // 亮藍強調色
-                        success: '#22c55e', // 綠色數據
+                        primary: '#0f172a', // Slate 900
+                        secondary: '#1e293b', // Slate 800
+                        accent: '#0ea5e9', // Sky 500
+                        success: '#10b981', // Emerald 500
                     }
                 }
             }
@@ -25,214 +25,295 @@
     </script>
     <style>
         body { font-family: 'Inter', 'Noto Sans TC', sans-serif; }
-        .tech-grid {
-            background-image: radial-gradient(#38bdf8 1px, transparent 1px);
-            background-size: 20px 20px;
-            opacity: 0.1;
+        .grid-bg {
+            background-image: radial-gradient(#334155 1px, transparent 1px);
+            background-size: 24px 24px;
+            opacity: 0.2;
         }
     </style>
 </head>
-<body class="bg-primary text-slate-200 antialiased selection:bg-accent selection:text-primary">
+<body class="bg-primary text-slate-200 antialiased selection:bg-accent selection:text-white">
 
     <!-- 導航列 -->
     <nav class="fixed w-full z-50 bg-primary/90 backdrop-blur-md border-b border-slate-700">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
-                <div class="flex-shrink-0">
-                    <span class="text-xl font-bold text-white tracking-wider">DYLAN.<span class="text-accent">OPS</span></span>
+                <div class="flex-shrink-0 font-bold text-xl text-white tracking-widest">
+                    Lena.<span class="text-accent">OPS</span>
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#home" class="hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">首頁</a>
-                        <a href="#results" class="hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">業績表現</a>
-                        <a href="#strategy" class="hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">商務談判 & 技術</a>
-                        <a href="#creative" class="hover:text-accent px-3 py-2 rounded-md text-sm font-medium transition-colors">活動呈現</a>
-                        <a href="#contact" class="bg-accent text-primary hover:bg-sky-400 px-4 py-2 rounded-md text-sm font-bold transition-colors">預約諮詢</a>
+                        <a href="#home" class="hover:text-accent transition-colors px-3 py-2 text-sm font-medium">營運心法</a>
+                        <a href="#results" class="hover:text-accent transition-colors px-3 py-2 text-sm font-medium">戰績總覽</a>
+                        <a href="#strategy" class="hover:text-accent transition-colors px-3 py-2 text-sm font-medium">技術護城河</a>
+                        <a href="#creative" class="hover:text-accent transition-colors px-3 py-2 text-sm font-medium">策略落地</a>
+                        <a href="#contact" class="bg-accent hover:bg-sky-600 text-white px-4 py-2 rounded text-sm font-bold transition-colors">與我聯繫</a>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- 1. 首頁 (Home) - 定位與哲學 -->
+    <!-- 1. 首頁 (Home) -->
     <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
-        <div class="absolute inset-0 tech-grid"></div>
+        <div class="absolute inset-0 grid-bg"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <div class="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wider text-accent uppercase bg-accent/10 rounded-full border border-accent/20">
-                Revenue Operations & Automation Strategy
+            <div class="inline-flex items-center px-3 py-1 rounded-full border border-accent/30 bg-accent/10 text-accent text-xs font-bold uppercase tracking-widest mb-6">
+                Revenue Operations Director
             </div>
-            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-                專注於 <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-blue-500">ROAS 翻倍</span> 與 <br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-accent">自動化營運</span> 的電商操盤手
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                打造 <span class="text-accent">自動化營運系統</span><br>
+                優化 <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-500">利潤結構</span>
             </h1>
-            <p class="mt-4 text-xl text-slate-400 max-w-3xl mx-auto">
-                以數據驅動策略，提供全站代操、AI 自動化部署與高成效會員經營策略。
+            <p class="mt-6 text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
+                不只追求漂亮的營收數字，更專注於建立長期穩健的獲利系統。透過數據決策與自建技術工具，實現低人力成本的規模化擴張。
             </p>
-            
-            <!-- 職業哲學 -->
-            <div class="mt-12 max-w-4xl mx-auto bg-secondary/50 backdrop-blur-sm border-l-4 border-accent p-6 rounded-r-lg text-left shadow-lg">
-                <h3 class="text-accent font-bold mb-2 flex items-center">
-                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                    我的操盤哲學
+
+            <!-- 職業哲學區塊 -->
+            <div class="mt-16 max-w-3xl mx-auto bg-secondary/50 backdrop-blur border-l-4 border-accent p-8 rounded-r-xl text-left shadow-2xl">
+                <h3 class="text-accent font-bold mb-3 flex items-center uppercase tracking-wider text-sm">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                    My Philosophy (營運心法)
                 </h3>
-                <p class="text-slate-300 italic text-lg leading-relaxed">
-                    「我不相信無止盡的價格戰。在電商紅海中，我專注於建立<strong class="text-white">自動化的高效運營體系</strong>與<strong class="text-white">不可取代的品牌特質</strong>。我相信透過精準的自動化與品牌特質堆疊，能創造可持續的利潤增長。」
+                <p class="text-slate-300 text-lg leading-relaxed italic">
+                    「我不打無止盡的價格戰。我的核心策略是：透過<strong class="text-white">『技術自動化』拉高人效</strong>，並以<strong class="text-white">『全域引流』灌溉蝦皮</strong>。我協助企業擺脫單一平台的流量焦慮，轉向可預測的獲利模式。」
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- 2. 業績表現 (Performance Results) -->
-    <section id="results" class="py-20 bg-secondary">
+    <!-- 2. 業績表現 (Results) -->
+    <section id="results" class="py-24 bg-secondary border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-white">財務表現與營運效率</h2>
-                <p class="mt-4 text-slate-400">數據證實：從衝刺型增長轉向利潤導向的成功轉型</p>
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-white mb-4">戰績總覽 & 效率指標</h2>
+                <p class="text-slate-400">數據證實：從衝刺營收 (GMV) 到利潤導向 (Profitability) 的體質轉型。</p>
             </div>
 
-            <!-- 通路業績總覽表格 -->
-            <div class="bg-primary/50 rounded-xl p-8 border border-slate-700 mb-12 overflow-hidden">
-                <h3 class="text-xl font-bold text-white mb-6 flex items-center">
-                    <span class="bg-accent/20 text-accent w-8 h-8 rounded flex items-center justify-center mr-3">1</span>
-                    通路業績總覽 (2022-2025)
-                </h3>
+            <!-- 數據總覽表 -->
+            <div class="bg-primary rounded-xl border border-slate-700 overflow-hidden mb-8 shadow-xl">
+                <div class="p-6 border-b border-slate-700 bg-slate-900/50 flex justify-between items-center">
+                    <h3 class="font-bold text-white flex items-center">
+                        <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                        通路營收表現 (2022-2025)
+                    </h3>
+                    <span class="text-xs text-slate-500 bg-slate-800 px-3 py-1 rounded-full">規模級別：數億級營收</span>
+                </div>
                 <div class="overflow-x-auto">
-                    <table class="w-full text-left border-collapse">
+                    <table class="w-full text-left">
                         <thead>
-                            <tr class="text-slate-400 border-b border-slate-700">
-                                <th class="p-4 font-medium">年份</th>
-                                <th class="p-4 font-medium">2022 (基期)</th>
-                                <th class="p-4 font-medium text-accent">2023 (6月接手)</th>
-                                <th class="p-4 font-medium text-white">2024 (首個完整年)</th>
-                                <th class="p-4 font-medium">2025 (轉型期)</th>
+                            <tr class="text-slate-400 border-b border-slate-800 text-sm uppercase">
+                                <th class="p-5 font-medium">年份</th>
+                                <th class="p-5 font-medium">2022 (基期)</th>
+                                <th class="p-5 font-medium text-white">2023 (導入期)</th>
+                                <th class="p-5 font-medium text-accent">2024 (擴張期)</th>
+                                <th class="p-5 font-medium text-success">2025 (轉型期)</th>
                             </tr>
                         </thead>
-                        <tbody class="text-slate-200">
-                            <tr class="border-b border-slate-700/50">
-                                <td class="p-4 font-bold">YOY 成長率</td>
-                                <td class="p-4">-</td>
-                                <td class="p-4 font-bold text-success">+21.23%</td>
-                                <td class="p-4 font-bold text-success text-lg">+22.14%</td>
-                                <td class="p-4 font-bold text-blue-400">+7.41%</td>
+                        <tbody class="text-slate-300">
+                            <tr class="border-b border-slate-800 hover:bg-slate-800/50 transition">
+                                <td class="p-5 font-bold text-white">YOY 成長率</td>
+                                <td class="p-5 text-slate-500">-</td>
+                                <td class="p-5 font-bold text-white">+21.23%</td>
+                                <td class="p-5 font-bold text-accent text-lg">+22.14%</td>
+                                <td class="p-5 font-bold text-success">+7.41%</td>
                             </tr>
                             <tr>
-                                <td class="p-4 text-sm text-slate-400">策略備註</td>
-                                <td class="p-4 text-sm text-slate-500">尚未介入</td>
-                                <td class="p-4 text-sm text-slate-400">接手管理，優化體質</td>
-                                <td class="p-4 text-sm text-white">策略全面執行，規模化擴張</td>
-                                <td class="p-4 text-sm text-slate-400">轉向品牌溢價與利潤優化</td>
+                                <td class="p-5 text-xs text-slate-500">戰略重點</td>
+                                <td class="p-5 text-xs">尚未介入</td>
+                                <td class="p-5 text-xs">接手管理，體質盤點</td>
+                                <td class="p-5 text-xs">策略全面執行，規模化複製</td>
+                                <td class="p-5 text-xs text-success font-medium">深化品牌價值，優化淨利</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
+            
+            <!-- GMV/YOY 增長趨勢圖 (Line Chart - No Specific Numbers) -->
+            <div class="w-full bg-primary/50 p-8 rounded-xl border border-slate-700 mb-12 shadow-xl">
+                <div class="flex justify-between items-end mb-8">
+                    <h3 class="text-white font-bold flex items-center">
+                        <span class="w-1 h-6 bg-accent rounded mr-3"></span>
+                        GMV 成長趨勢 (2022-2025)
+                    </h3>
+                    <div class="flex items-center text-xs text-slate-400">
+                        <span class="w-8 h-0.5 bg-accent mr-2"></span> 營收規模趨勢
+                    </div>
+                </div>
+                
+                <div class="relative h-64 w-full px-4 md:px-8">
+                    <!-- Grid Lines (No Labels) -->
+                    <div class="absolute inset-0 flex flex-col justify-between pointer-events-none px-4 md:px-8">
+                        <div class="border-t border-slate-800 w-full h-0"></div>
+                        <div class="border-t border-slate-800 w-full h-0"></div>
+                        <div class="border-t border-slate-800 w-full h-0"></div>
+                        <div class="border-t border-slate-700 w-full h-0"></div>
+                    </div>
 
-            <!-- 核心效率指標卡片 -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-                <!-- Card 1 -->
-                <div class="bg-primary/50 p-6 rounded-xl border border-slate-700 hover:border-accent/50 transition duration-300">
-                    <p class="text-slate-400 text-sm mb-2">廣告效率 (ROAS)</p>
-                    <p class="text-3xl font-bold text-white mb-2">35.0</p>
-                    <p class="text-xs text-slate-500">維持極高邊際效益，支撐 22% 規模增長。</p>
+                    <!-- SVG Chart -->
+                    <svg class="absolute inset-0 w-full h-full overflow-visible" viewBox="0 0 400 100" preserveAspectRatio="none">
+                        <defs>
+                            <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.3"/>
+                                <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0"/>
+                            </linearGradient>
+                        </defs>
+                        <!-- Area Path -->
+                        <path d="M50,40 L150,28 L250,11 L350,5 L350,100 L50,100 Z" fill="url(#chartGradient)" stroke="none"/>
+                        <!-- Line Path -->
+                        <path d="M50,40 L150,28 L250,11 L350,5" fill="none" stroke="#0ea5e9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        
+                        <!-- Data Points -->
+                        <circle cx="50" cy="40" r="4" class="fill-slate-900 stroke-accent" stroke-width="2"/>
+                        <circle cx="150" cy="28" r="4" class="fill-slate-900 stroke-accent" stroke-width="2"/>
+                        <circle cx="250" cy="11" r="4" class="fill-slate-900 stroke-accent" stroke-width="2"/>
+                        <circle cx="350" cy="5" r="4" class="fill-slate-900 stroke-emerald-400" stroke-width="2"/>
+                    </svg>
+
+                    <!-- X-Axis Labels -->
+                    <div class="absolute bottom-[-2rem] left-0 right-0 flex justify-between text-slate-400 text-sm font-medium px-4 md:px-8">
+                        <div class="w-[100px] text-center">2022</div>
+                        <div class="w-[100px] text-center">2023</div>
+                        <div class="w-[100px] text-center">2024</div>
+                        <div class="w-[100px] text-center text-emerald-400">2025</div>
+                    </div>
                 </div>
-                <!-- Card 2 -->
-                <div class="bg-primary/50 p-6 rounded-xl border border-slate-700 hover:border-accent/50 transition duration-300">
-                    <p class="text-slate-400 text-sm mb-2">獲利能力 (毛利)</p>
-                    <p class="text-3xl font-bold text-white mb-2">PR80</p>
-                    <p class="text-xs text-slate-500">連三年全通路控制在 PR80，精準定價。</p>
-                </div>
-                <!-- Card 3 -->
-                <div class="bg-primary/50 p-6 rounded-xl border border-slate-700 hover:border-accent/50 transition duration-300">
-                    <p class="text-slate-400 text-sm mb-2">極致人效</p>
-                    <p class="text-3xl font-bold text-white mb-2">1 + 1</p>
-                    <p class="text-xs text-slate-500">僅 2 人團隊管理 7 館，人力成本零增長。</p>
-                </div>
-                <!-- Card 4 -->
-                <div class="bg-primary/50 p-6 rounded-xl border border-slate-700 hover:border-accent/50 transition duration-300">
-                    <p class="text-slate-400 text-sm mb-2">規模擴張</p>
-                    <p class="text-3xl font-bold text-white mb-2">3.5X</p>
-                    <p class="text-xs text-slate-500">負責館別從 2 館擴展至 7 館同步運作。</p>
-                </div>
+                <div class="h-8"></div>
             </div>
 
-            <!-- 2025 戰略解釋 -->
-            <div class="bg-gradient-to-r from-slate-800 to-slate-900 p-6 rounded-lg border-l-4 border-blue-500">
-                <h4 class="text-lg font-bold text-white mb-2">💡 2025 年成長率轉向戰略解讀</h4>
-                <p class="text-slate-300">
-                    在 2024 年達成 22.14% 高成長後，隨著館別擴張至 7 間，策略重心從「衝刺型 GMV」轉向「積極建立品牌獨立特質」。
-                    <br><br>
-                    雖然 2025 年 GMV 增速放緩至 7.41%，但透過維持 ROAS 35 的高效率與 PR80 的毛利控制，
-                    我們成功提升了<strong class="text-white">淨利潤率與客戶終身價值 (LTV)</strong>，確保企業在紅海中擁有健康的現金流與品牌護城河。
-                </p>
+            <!-- 核心效率指標 (Cards) - 三欄式 -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Card 1: ROAS -->
+                <div class="bg-primary p-6 rounded-xl border border-slate-700 hover:border-accent/50 transition duration-300 group">
+                    <p class="text-slate-400 text-xs uppercase tracking-wider mb-2">廣告投產比 (ROAS)</p>
+                    <div class="text-4xl font-bold text-white mb-2 group-hover:text-accent transition">35.0 <!-- 請再次核實 ROAS 數據 --></div>
+                    <p class="text-xs text-slate-500">精準控制效益，以極低獲客成本支撐 22% 規模增長。</p>
+                </div>
+                
+                <!-- Card 2: Margin -->
+                <div class="bg-primary p-6 rounded-xl border border-slate-700 hover:border-accent/50 transition duration-300 group">
+                    <p class="text-slate-400 text-xs uppercase tracking-wider mb-2">毛利控制力 (Margin)</p>
+                    <div class="text-4xl font-bold text-white mb-2 group-hover:text-accent transition">PR80 <!-- 請確認此數據格式是否與公司內部一致 --></div>
+                    <p class="text-xs text-slate-500">在全通路商品調整震盪期，仍將毛利率鎖定在 PR80 高標。</p>
+                </div>
+
+                <!-- Card 3: Efficiency -->
+                <div class="bg-primary p-6 rounded-xl border border-slate-700 hover:border-accent/50 transition duration-300 group">
+                    <p class="text-slate-400 text-xs uppercase tracking-wider mb-2">極致人效 (Efficiency)</p>
+                    <div class="text-4xl font-bold text-white mb-2 group-hover:text-accent transition">1 + 1</div>
+                    <p class="text-xs text-slate-500">僅 2 人核心團隊管理 7 館 (3.5倍擴張)，人力成本幾乎零增長。</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- 3. 商務談判與技術護城河 (Strategy & Tech) -->
-    <section id="strategy" class="py-20 bg-primary relative overflow-hidden">
-        <!-- 裝飾背景 -->
-        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
+    <!-- 3. 商務談判 & 技術護城河 (Strategy) -->
+    <section id="strategy" class="py-24 bg-primary relative overflow-hidden">
+        <!-- 背景裝飾 -->
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-slate-800/20 skew-x-12 transform origin-top-right"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-white">商務談判 & 技術護城河</h2>
-                <p class="mt-4 text-slate-400">不只是執行，更建立自動化資產與解決複雜商業問題。</p>
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4">策略佈局 & 技術護城河</h2>
+                <p class="text-slate-400">不只是執行，更是流程標準化與技術資產的<span class="text-accent font-bold">建構者</span>。</p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <!-- 左側：技術護城河 -->
+                <!-- 左欄：技術優勢 (Tech Moat) -->
                 <div>
-                    <h3 class="text-2xl font-bold text-white mb-6 flex items-center">
-                        <svg class="w-6 h-6 mr-3 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
-                        The Tech Moat (技術資產)
+                    <h3 class="text-xl font-bold text-accent mb-6 flex items-center">
+                        <span class="bg-accent/20 p-2 rounded mr-3">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        </span>
+                        核心優勢：自建自動化中台
                     </h3>
-                    <div class="bg-secondary p-8 rounded-xl border border-slate-700 shadow-xl">
-                        <p class="text-slate-300 mb-6">
-                            為了支撐「2 人團隊管理 7 館」的高效運作，我自行開發並導入了自動化系統，這已成為公司的標準化資產。
-                        </p>
+                    <div class="bg-secondary p-8 rounded-xl border border-slate-700 shadow-lg relative overflow-hidden flex flex-col h-full">
+                        <div class="absolute top-0 right-0 p-4 opacity-10 pointer-events-none">
+                            <svg class="w-24 h-24 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                        </div>
                         
-                        <div class="space-y-6">
-                            <div class="bg-primary p-4 rounded-lg border border-slate-800">
-                                <div class="flex justify-between items-center mb-2">
-                                    <h4 class="text-accent font-bold">Python 自動變價機器人</h4>
-                                    <span class="text-xs bg-slate-700 px-2 py-1 rounded text-slate-300">Automation</span>
+                        <!-- 1. 商業價值 -->
+                        <div class="mb-6 relative z-10">
+                            <p class="text-slate-300 leading-relaxed">
+                                <strong class="text-white">系統效益：</strong>
+                                支撐「2 人管理 7 館」的關鍵架構。透過自動化消除 <span class="text-white font-bold">50%</span> 重複工時，人為錯誤率降低 <span class="text-white font-bold">75%</span>。
+                            </p>
+                        </div>
+
+                        <!-- 2. 視覺架構 -->
+                        <div class="w-full h-40 bg-slate-900/50 rounded-lg flex items-center justify-center mb-6 border-2 border-dashed border-slate-700/50 group hover:border-accent/50 transition relative z-10">
+                            <span class="text-slate-500 text-sm group-hover:text-accent transition">請插入：系統架構圖 (Python Data Flow)</span>
+                        </div>
+                        
+                        <!-- 3. 核心模組 -->
+                        <div class="space-y-3 relative z-10 mb-8">
+                            <div class="flex items-start">
+                                <span class="text-accent mt-1 mr-3">▹</span>
+                                <div>
+                                    <strong class="text-white block text-sm">自動變價系統 (Pricing Bot)</strong>
+                                    <span class="text-slate-400 text-xs">即時監控競品，動態調整毛利。</span>
                                 </div>
-                                <p class="text-sm text-slate-400">即時監控多館價格並自動調整，將變價流程縮短 <span class="text-white font-bold">50%</span>。</p>
                             </div>
-                            
-                            <div class="bg-primary p-4 rounded-lg border border-slate-800">
-                                <div class="flex justify-between items-center mb-2">
-                                    <h4 class="text-accent font-bold">跨通路數據撈取模組</h4>
-                                    <span class="text-xs bg-slate-700 px-2 py-1 rounded text-slate-300">Data Pipeline</span>
+                            <div class="flex items-start">
+                                <span class="text-accent mt-1 mr-3">▹</span>
+                                <div>
+                                    <strong class="text-white block text-sm">全通路數據整合 (Omni-Pipeline)</strong>
+                                    <span class="text-slate-400 text-xs">自動清洗多平台報表，統一數據規格。</span>
                                 </div>
-                                <p class="text-sm text-slate-400">自動彙整 7 個館別報表，消除人為 Key 單錯誤，錯誤率降低 <span class="text-white font-bold">75%</span>。</p>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-accent mt-1 mr-3">▹</span>
+                                <div>
+                                    <strong class="text-white block text-sm">AI 輔助決策 (AI Analysis)</strong>
+                                    <span class="text-slate-400 text-xs">預測庫存水位，優化補貨建議。</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 4. 技術底座 (Tech Stack) -->
+                        <div class="mt-auto relative z-10 pt-6 border-t border-slate-700/50">
+                            <p class="text-xs text-slate-500 uppercase tracking-wider mb-3 font-semibold">Tech Stack & Integration</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-slate-800 text-[10px] text-blue-300 rounded border border-slate-600">Python</span>
+                                <span class="px-2 py-1 bg-slate-800 text-[10px] text-blue-300 rounded border border-slate-600">VBA</span>
+                                <span class="px-2 py-1 bg-emerald-900/30 text-[10px] text-emerald-400 rounded border border-emerald-800">Shopee</span>
+                                <span class="px-2 py-1 bg-emerald-900/30 text-[10px] text-emerald-400 rounded border border-emerald-800">Shopline</span>
+                                <span class="px-2 py-1 bg-emerald-900/30 text-[10px] text-emerald-400 rounded border border-emerald-800">Shopify</span>
+                                <span class="px-2 py-1 bg-pink-900/30 text-[10px] text-pink-400 rounded border border-pink-800">ZecZec</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- 右側：複雜問題復盤 -->
-                <div>
-                    <h3 class="text-2xl font-bold text-white mb-6 flex items-center">
-                        <svg class="w-6 h-6 mr-3 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path></svg>
-                        Case Study: 危機與談判
-                    </h3>
-                    <div class="space-y-6">
-                        <!-- Case 1 -->
-                        <div class="group">
-                            <h4 class="text-lg font-bold text-white group-hover:text-accent transition-colors mb-2">案例 I：邊際效益的預期管理</h4>
-                            <p class="text-slate-400 text-sm leading-relaxed">
-                                <span class="block mb-1 text-slate-500">情境：ROAS 達 35 (邊際效益點)，客戶仍要求單純加預算衝 300% 增長。</span>
-                                <span class="text-slate-300">解決方案：</span>我利用數據證明邊際遞減效應，成功說服客戶將預算轉向<strong>商品案型開發與贈品支援</strong>。結果在不犧牲 ROAS 的前提下，透過提高 AOV 達成了業績目標。
+                <!-- 右欄：談判與危機處理 -->
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-4">Case I: 資源配置與預期管理</h3>
+                        <div class="pl-4 border-l-2 border-accent hover:pl-6 transition-all duration-300">
+                            <p class="text-slate-400 text-sm mb-2 font-semibold uppercase tracking-wide">挑戰：邊際效益遞減</p>
+                            <p class="text-slate-200 leading-relaxed">
+                                <strong class="text-white">判定 ROAS 35 為邊際效益頂點</strong>，果斷停止預算加碼。透過數據說服客戶將預算轉投至<strong class="text-accent">「商品案型開發」</strong>與<strong class="text-accent">「贈品結構優化」</strong>，在不犧牲投產比的情況下，突破營收天花板。
                             </p>
                         </div>
-                        <div class="w-full h-px bg-slate-800"></div>
-                        <!-- Case 2 -->
-                        <div class="group">
-                            <h4 class="text-lg font-bold text-white group-hover:text-accent transition-colors mb-2">案例 II：供應鏈危機的跨部門整合</h4>
-                            <p class="text-slate-400 text-sm leading-relaxed">
-                                <span class="block mb-1 text-slate-500">情境：供應鏈出貨嚴重延誤，面臨平台扣分與退款潮。</span>
-                                <span class="text-slate-300">解決方案：</span>迅速拉通客服、系統、平台方(蝦皮)。第一時間撈取受災戶，發放<strong>「等值損失折扣碼」</strong>安撫，並以此數據向供應鏈索賠。成功將客訴轉化為下一次大促的回購動能。
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-4">Case II: 供應鏈斷鏈危機處理</h3>
+                        <div class="pl-4 border-l-2 border-red-500 hover:pl-6 transition-all duration-300">
+                            <p class="text-slate-400 text-sm mb-2 font-semibold uppercase tracking-wide">挑戰：風險管控</p>
+                            <p class="text-slate-200 leading-relaxed">
+                                <strong class="text-white">啟動斷鏈緊急應變 SOP</strong>。整合客服、物流與平台資源，建立補償標準。精準計算客損補償，成功將供應鏈斷鏈危機轉化為品牌信任，穩固顧客回購率。
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Case III: JBP Negotiation -->
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-4">Case III: 平台年度框架談判 (JBP)</h3>
+                        <div class="pl-4 border-l-2 border-emerald-500 hover:pl-6 transition-all duration-300">
+                            <p class="text-slate-400 text-sm mb-2 font-semibold uppercase tracking-wide">挑戰：資源爭取</p>
+                            <p class="text-slate-200 leading-relaxed">
+                                主導年度 <strong class="text-white">JBP (Joint Business Plan) 談判</strong>。基於過往 GMV 成長與「品牌特質」策略，成功向平台方爭取 <strong class="text-white">S 級版位曝光</strong> 與 <strong class="text-white">獨家補貼資源</strong>，大幅降低行銷成本。
                             </p>
                         </div>
                     </div>
@@ -241,103 +322,102 @@
         </div>
     </section>
 
-    <!-- 4. 活動呈現 (Creative Showcase) -->
-    <section id="creative" class="py-20 bg-secondary">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-white">活動呈現與創意執行</h2>
-                <p class="mt-4 text-slate-400">解決無法追蹤單頁 CTR 的痛點：以最終轉換與銷量佐證設計價值。</p>
+    <!-- 4. 創意呈現 (Creative) -->
+    <section id="creative" class="py-24 bg-secondary border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-white mb-4">全域戰略：打造「蝦皮護城河」</h2>
+                <p class="text-slate-400">整合過往跨平台成功經驗，解決單一平台流量瓶頸，為蝦皮導入外部活水。</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-                <!-- 視覺策略 1 -->
-                <div class="bg-primary rounded-xl overflow-hidden shadow-lg border border-slate-700 group">
-                    <div class="h-48 bg-slate-800 relative overflow-hidden">
-                        <!-- Placeholder Image -->
-                        <img src="https://placehold.co/600x400/1e293b/a5b4fc?text=Landing+Page+Before/After" alt="活動頁設計" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 text-left">
+                <!-- Card 1: 品牌與新品 (Brand & Launch) -->
+                <div class="bg-primary rounded-lg overflow-hidden border border-slate-700 group hover:-translate-y-2 transition duration-300 shadow-lg flex flex-col h-full">
+                    <div class="h-48 bg-slate-800 flex items-center justify-center relative shrink-0">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition"></div>
+                        <!-- 替換此處的圖片連結 -->
+                        <img src="https://placehold.co/600x400/1e293b/a5b4fc?text=ZecZec+Crowdfunding+Page" alt="嘖嘖募資與品牌官網" class="w-full h-full object-cover">
                     </div>
-                    <div class="p-6">
-                        <h4 class="text-lg font-bold text-white mb-2">品牌獨立特質視覺化</h4>
-                        <p class="text-slate-400 text-sm mb-4">透過視覺動線引導，解決「價格戰」問題，建立品牌質感。</p>
-                        <div class="flex items-center text-xs font-bold text-success">
-                            <span class="bg-success/10 px-2 py-1 rounded mr-2">佐證</span>
-                            主打商品銷量成長 [請補充]%
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h4 class="font-bold text-white mb-2 text-lg">品牌溢價與募資操盤</h4>
+                        <p class="text-sm text-slate-400 mb-4 leading-relaxed flex-grow">
+                            具備 <strong class="text-accent">Shopline / Shopify</strong> 與 <strong class="text-pink-400">嘖嘖募資</strong> 完整操盤經驗。能將「新品發布」與「品牌官網」的邏輯導入蝦皮，解決通路低價內捲，建立溢價空間。
+                        </p>
+                        <div class="mt-auto w-fit text-xs font-bold text-success bg-success/10 inline-block px-3 py-1.5 rounded border border-success/20">
+                            能力資產：募資達標與品牌站建置
                         </div>
                     </div>
                 </div>
 
-                <!-- 視覺策略 2 -->
-                <div class="bg-primary rounded-xl overflow-hidden shadow-lg border border-slate-700 group">
-                    <div class="h-48 bg-slate-800 relative overflow-hidden">
-                        <!-- Placeholder Image -->
-                        <img src="https://placehold.co/600x400/1e293b/a5b4fc?text=Ads+Creative+A/B+Test" alt="廣告素材" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <!-- Card 2: 廣告與流量 (Ads & Traffic) -->
+                <div class="bg-primary rounded-lg overflow-hidden border border-slate-700 group hover:-translate-y-2 transition duration-300 shadow-lg flex flex-col h-full">
+                    <div class="h-48 bg-slate-800 flex items-center justify-center relative shrink-0">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition"></div>
+                        <!-- 替換此處的圖片連結 -->
+                        <img src="https://placehold.co/600x400/1e293b/a5b4fc?text=CPAS+Ad+Creatives" alt="CPAS廣告素材" class="w-full h-full object-cover">
                     </div>
-                    <div class="p-6">
-                        <h4 class="text-lg font-bold text-white mb-2">高轉換素材 A/B Test</h4>
-                        <p class="text-slate-400 text-sm mb-4">針對痛點設計情境式素材，優於通用產品圖。</p>
-                        <div class="flex items-center text-xs font-bold text-success">
-                            <span class="bg-success/10 px-2 py-1 rounded mr-2">佐證</span>
-                            ROAS 提升至 35+
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h4 class="font-bold text-white mb-2 text-lg">全域引流模型 (External Traffic)</h4>
+                        <p class="text-sm text-slate-400 mb-4 leading-relaxed flex-grow">
+                            擅長操作 <strong class="text-accent">CPAS 協作廣告</strong> 與外部流量導購。當站內流量成本上升時，能迅速切換至站外引流模式，精準串聯數據，突破平台流量天花板。
+                        </p>
+                        <div class="mt-auto w-fit text-xs font-bold text-success bg-success/10 inline-block px-3 py-1.5 rounded border border-success/20">
+                            能力資產：ROAS 優化與跨站追蹤
                         </div>
                     </div>
                 </div>
 
-                <!-- 視覺策略 3 -->
-                <div class="bg-primary rounded-xl overflow-hidden shadow-lg border border-slate-700 group">
-                    <div class="h-48 bg-slate-800 relative overflow-hidden">
-                        <!-- Placeholder Image -->
-                        <img src="https://placehold.co/600x400/1e293b/a5b4fc?text=Shopee+Ranking+Evidence" alt="蝦皮排名佐證" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                <!-- Card 3: 通路與擴散 (Channel & Distribution) -->
+                <div class="bg-primary rounded-lg overflow-hidden border border-slate-700 group hover:-translate-y-2 transition duration-300 shadow-lg flex flex-col h-full">
+                    <div class="h-48 bg-slate-800 flex items-center justify-center relative shrink-0">
+                        <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition"></div>
+                        <!-- 替換此處的圖片連結 -->
+                        <img src="https://placehold.co/600x400/1e293b/a5b4fc?text=KOL+Group+Buying+Shopee" alt="KOL團購與蝦皮排名" class="w-full h-full object-cover">
                     </div>
-                    <div class="p-6">
-                        <h4 class="text-lg font-bold text-white mb-2">蝦皮排名競爭力</h4>
-                        <p class="text-slate-400 text-sm mb-4">在多經銷商競爭中，透過運營與視覺優化奪得領先。</p>
-                        <div class="flex items-center text-xs font-bold text-success">
-                            <span class="bg-success/10 px-2 py-1 rounded mr-2">佐證</span>
-                            類目排名 Top 1
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h4 class="font-bold text-white mb-2 text-lg">爆品引爆機制 (Sales Velocity)</h4>
+                        <p class="text-sm text-slate-400 mb-4 leading-relaxed flex-grow">
+                            擁有 <strong class="text-accent">KOL 團購專案</strong> 執行經驗。懂得利用社群瞬間銷量衝擊蝦皮演算法權重，帶動站內自然排名 (SEO)，奪下類目 Top 1 主導權。
+                        </p>
+                        <div class="mt-auto w-fit text-xs font-bold text-success bg-success/10 inline-block px-3 py-1.5 rounded border border-success/20">
+                            能力資產：社群動員與排名優化
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Figma Link CTA -->
-            <div class="text-center">
-                <a href="[請替換為您的 Figma 連結]" target="_blank" class="inline-flex items-center bg-transparent border-2 border-accent text-accent hover:bg-accent hover:text-primary font-bold py-3 px-8 rounded-full transition duration-300">
-                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
-                    查看完整視覺設計 (Figma)
-                </a>
-                <p class="mt-4 text-xs text-slate-500">包含 Landing Page 結構稿、設計規範與更多素材細節。</p>
-            </div>
+            <a href="[Figma Link]" target="_blank" class="inline-flex items-center px-8 py-3 border border-transparent text-base font-bold rounded-full text-primary bg-accent hover:bg-sky-400 transition-colors shadow-lg hover:shadow-accent/50">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                查看完整設計規範 (Figma)
+            </a>
         </div>
     </section>
 
-    <!-- 5. 聯絡諮詢 (Contact) -->
-    <section id="contact" class="py-20 bg-primary">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold text-white mb-8">啟動利潤增長計畫</h2>
-            <div class="bg-secondary p-8 rounded-xl border border-slate-700 shadow-2xl">
-                <p class="text-slate-300 mb-8 text-lg">
-                    我提供 30 分鐘免費帳戶健檢。為確保諮詢品質，請在預約時提供您的<span class="text-accent font-bold">網址、月預算與核心問題</span>。
-                </p>
+    <!-- 5. 聯絡 (Contact) -->
+    <section id="contact" class="py-24 bg-primary">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-white mb-8">聊聊您的營運痛點</h2>
+            <div class="bg-secondary p-12 rounded-2xl border border-slate-700 shadow-2xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-accent/5 rounded-full blur-3xl"></div>
                 
-                <div class="flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="[請替換為您的 Calendly 連結]" target="_blank" class="bg-accent text-primary font-bold py-4 px-8 rounded-lg hover:bg-sky-400 transition duration-300 text-lg flex items-center justify-center">
-                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                        預約 Calendly 諮詢
-                    </a>
-                    <a href="mailto:[請替換為您的 Email]" class="bg-slate-700 text-white font-bold py-4 px-8 rounded-lg hover:bg-slate-600 transition duration-300 text-lg flex items-center justify-center">
-                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                        Email 聯繫
+                <p class="text-slate-300 mb-10 text-lg leading-relaxed relative z-10">
+                    若您正尋求自動化營運轉型與利潤結構優化策略，歡迎直接來信。<br>
+                    期待與您探討如何透過技術與戰略，為企業創造不可替代的護城河。
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-6 relative z-10">
+                    <a href="mailto:SSA78954689@gmail.com" class="bg-accent text-primary hover:bg-sky-400 font-bold py-4 px-10 rounded-lg transition-colors flex items-center justify-center shadow-lg hover:shadow-xl hover:-translate-y-1 duration-200">
+                        <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        Email 聯繫：SSA78954689@gmail.com
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-slate-900 py-8 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 text-center text-slate-500 text-sm">
-            <p>&copy; 2025 Dylan.OPS. All Rights Reserved.</p>
-            <p class="mt-2">Automated Operations | Revenue Growth | Brand Strategy</p>
+    <footer class="bg-slate-900 py-10 text-center border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="text-slate-500 text-sm">&copy; 2025 Lena.OPS. All Rights Reserved.</p>
+            <p class="text-slate-600 text-xs mt-2">Revenue Operations | Automation Strategy | Profitability Optimization</p>
         </div>
     </footer>
 
